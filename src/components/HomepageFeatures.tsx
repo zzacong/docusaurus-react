@@ -4,15 +4,15 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React from 'react';
-import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+import React from 'react'
+import clsx from 'clsx'
+import styles from './HomepageFeatures.module.css'
 
 type FeatureItem = {
-  title: string;
-  image: string;
-  description: JSX.Element;
-};
+  title: string
+  image: string
+  description: JSX.Element
+}
 
 const FeatureList: FeatureItem[] = [
   {
@@ -45,9 +45,9 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
-];
+]
 
-function Feature({title, image, description}: FeatureItem) {
+function Feature({ title, image, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -58,7 +58,7 @@ function Feature({title, image, description}: FeatureItem) {
         <p>{description}</p>
       </div>
     </div>
-  );
+  )
 }
 
 export default function HomepageFeatures(): JSX.Element {
@@ -72,5 +72,5 @@ export default function HomepageFeatures(): JSX.Element {
         </div>
       </div>
     </section>
-  );
+  )
 }
